@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap");
+
 body {
   background: #101010;
   color: #f1f1f1;
+  font-family: "JetBrains Mono", monospace;
 }
