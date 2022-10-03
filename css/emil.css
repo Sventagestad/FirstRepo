@@ -5,3 +5,12 @@
   --dark-300: #303035;
   --dark-100: #3b3b44;
 }
+
+h1,
+h2 {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

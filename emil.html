@@ -12,16 +12,136 @@
     <link rel="stylesheet" href="./css/emil.css" />
   </head>
   <body>
-    <p>What the <span>dog</span> doing</p>
-
     <script>
-      anime({
-        targets: "p",
-        translateX: 500,
-        translateY: 500,
-        fontSize: "40px",
-        duration: 2000,
-      });
+      const tl = anime.timeline();
+
+      const TEXT1 = document.createElement("h1");
+      TEXT1.innerText = "WHAT";
+      document.body.append(TEXT1);
+
+      const TEXT2 = document.createElement("h2");
+      TEXT2.innerText = "THE";
+      document.body.append(TEXT2);
+
+      tl.add({
+        targets: "h1",
+        scale: 12,
+        opacity: 1,
+        duration: 200,
+        easing: "easeInOutQuad",
+      })
+        .add({
+          targets: "h1",
+          scale: 3,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          scale: 6,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateY: "100%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateY: "-100%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateY: "0%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateX: "100%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateX: "-100%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          translateX: "0%",
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h1",
+          opacity: 0,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 32,
+          innerText: "THE",
+          opacity: 1,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 8,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 16,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 6,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          innerText: "DOG",
+          scale: 100,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 50,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 5,
+          duration: 200,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          scale: 1,
+          duration: 2000,
+          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          innerText: "DOING!?!?!?!?!??!?!?!!",
+          scale: 10,
+          duration: 200,
+          easing: "easeInOutQuad",
+        });
     </script>
   </body>
 </html>
