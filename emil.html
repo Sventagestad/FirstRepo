@@ -13,14 +13,14 @@
   </head>
   <body>
     <script>
-      const tl = anime.timeline();
+      const tl = anime.timeline({ loop: true, easing: "easeInOutQuad" });
 
       const TEXT1 = document.createElement("h1");
-      TEXT1.innerText = "WHAT";
+      TEXT1.innerHTML = "WHAT";
       document.body.append(TEXT1);
 
       const TEXT2 = document.createElement("h2");
-      TEXT2.innerText = "THE";
+      TEXT2.innerHTML = "THE";
       document.body.append(TEXT2);
 
       tl.add({
@@ -28,119 +28,106 @@
         scale: 12,
         opacity: 1,
         duration: 200,
-        easing: "easeInOutQuad",
       })
         .add({
           targets: "h1",
           scale: 3,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           scale: 6,
-          duration: 200,
-          easing: "easeInOutQuad",
+          duration: 20,
         })
         .add({
           targets: "h1",
           translateY: "100%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           translateY: "-100%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           translateY: "0%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           translateX: "100%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           translateX: "-100%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           translateX: "0%",
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h1",
           opacity: 0,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 32,
-          innerText: "THE",
+          innerHTML: "THE",
           opacity: 1,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 8,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 16,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 6,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
-          innerText: "DOG",
+          innerHTML: "DOG",
           scale: 100,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 50,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 5,
           duration: 200,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
           scale: 1,
           duration: 2000,
-          easing: "easeInOutQuad",
         })
         .add({
           targets: "h2",
-          innerText: "DOING!?!?!?!?!??!?!?!!",
-          scale: 10,
+          innerHTML: "DOING!?!?!?!?!??!?!?!!",
+          scale: 5,
           duration: 200,
-          easing: "easeInOutQuad",
+        })
+        .add({
+          targets: "h2",
+          innerHTML: "DOING!?!?!?!?!??!?!?!!",
+          scale: 10,
+          duration: 5000,
         });
     </script>
   </body>
