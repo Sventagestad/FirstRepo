@@ -5,16 +5,37 @@
   --dark-300: #303035;
   --dark-100: #3b3b44;
 }
-
 body {
+  margin: 100px;
 }
-
+.knapp {
+  text-size-adjust: 10px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(44, 44, 44);
+}
 .MenuContainer {
-  width: 12vw;
-  height: 20vw;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  width: 7rem;
   background-color: #0b4aa3;
 }
 
 .huvve {
+  text-align: center;
   background-color: #44bd32;
+}
+
+.kropp {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.kropp > a {
+  padding: 0.25rem;
+  display: block;
 }
