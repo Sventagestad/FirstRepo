@@ -39,3 +39,7 @@ body {
   padding: 0.25rem;
   display: block;
 }
+
+.hide {
+  display: none;
+}
