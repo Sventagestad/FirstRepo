@@ -5,3 +5,16 @@
   --dark-300: #303035;
   --dark-100: #3b3b44;
 }
+
+body {
+}
+
+.MenuContainer {
+  width: 12vw;
+  height: 20vw;
+  background-color: #0b4aa3;
+}
+
+.huvve {
+  background-color: #44bd32;
+}
