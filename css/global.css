@@ -40,4 +40,5 @@ button {
   font-weight: bold;
   outline: none;
   border: none;
+  cursor: pointer;
 }
